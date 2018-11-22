@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { TdfFormComponent } from './TDF/tdf-form/tdf-form.component';
 import { HomeComponent } from './home/home.component';
 import { ReactiveComponent } from './reactiveForms/reactive/reactive.component';
-import { CountriesComponent } from './home/input-output/countries/countries.component';
-import { ChildComponent } from './home/input-output/child/child.component';
-import { ParentComponent } from './home/input-output/parent/parent.component';
+import { ChildComponent } from './input-output/child/child.component';
+import { ParentComponent } from './input-output/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { ParentComponent } from './home/input-output/parent/parent.component';
     TdfFormComponent,
     HomeComponent,
     ReactiveComponent,
-    CountriesComponent,
     ChildComponent,
     ParentComponent
   ],
