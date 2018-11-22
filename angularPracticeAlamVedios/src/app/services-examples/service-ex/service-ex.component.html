@@ -1,0 +1,48 @@
+<div class="container-fluid" style="padding-left: 15px; background-color:aliceblue;">
+  <div class="row">
+    <!-- <div class="col-sm-4">
+      <h1> {{title}}</h1>
+      <h2>Employee</h2>
+      <div *ngIf="getEmpObj">
+        <h3>Name: {{employeeObj.name}}</h3>
+        <h3>City: {{employeeObj.city}}</h3>
+        <h3>Age: {{employeeObj.age}}</h3>
+      </div>
+
+      <input [(ngModel)]="empId" placeholder="empId">
+      <button (click)="getEmployeeDetails()">Get Employee Detials</button>
+    </div> -->
+
+    <!-- <div class="col-sm-4">
+      <h2>Get country object</h2>
+      <div *ngIf="getCouObj">
+        <h3>Name: {{countryObj.name}}</h3>
+        <h3>Capital: {{countryObj.capital}}</h3>
+        <h3>Currency: {{countryObj.currencies[0].symbol}}</h3>
+      </div>
+      <div>
+        <select [(ngModel)]="countryName">
+          <option *ngFor="let country of countriesList" value="{{country.name}}">{{country.name}}</option>
+        </select>
+
+        <img src='{{countryObj.flag}}' alt="Smiley face" height="100" width="100">
+      </div>      
+     
+      <button (click)="getCountryInfo()">Get Country Detials</button>
+    </div> -->
+    <div class="col-sm-4">
+      <h2>Post Respsonse Data</h2>
+      <h3>Name: <span style="color:red">{{profileObj.name}}</span></h3>
+      <h3>Job: <span style="color:red">{{profileObj.job}}</span></h3>
+      <h3>City: <span style="color:red">{{profileObj.city}}</span></h3>
+      <h3>Id: <span style="color:red">{{profileObj.id}}</span></h3>
+      <button (click)="saveUserProfile()">Save Profile</button>
+      <!-- saveProfile -->
+      
+
+    </div>
+
+    
+
+  </div>
+</div>

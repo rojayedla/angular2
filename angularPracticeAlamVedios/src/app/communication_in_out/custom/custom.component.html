@@ -1,0 +1,20 @@
+
+<!-- <app-countries></app-countries> -->
+<h2>{{title}}</h2>
+<h3>Employee Records</h3>
+<div>
+    <h4>Selected Record</h4>
+    <h3>Name : <span style="color:red">{{selectedEmployeeData.selectedName}}</span></h3>
+    <h3>City : <span style="color:red">{{selectedEmployeeData.selectedCity}}</span></h3>
+
+    <h3>Salary : <span style="color:red">{{selectedEmployeeData.selectedSalary}}</span></h3>
+
+</div>
+
+
+<app-data [name]='employee.eName' 
+[city]='employee.eCity' 
+[salary]='employee.eSalary'
+(sendRecord)="getRecord($event)"
+*ngFor ="let employee of employeeRecord">The Employee recods get displayed here</app-data>
+<hr>

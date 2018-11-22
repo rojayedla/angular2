@@ -1,0 +1,37 @@
+<div class="container">
+  <h4 style="background-color: yellow; color: red; text-align: center">{{title}}</h4>
+  <table class="table table-stiped">
+    <thead>
+
+      <tr style="text-align: center;" colspan="2">
+        <td>{{tableHeading}}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Country: </td>
+        <td>{{cityDetails.country}}</td>
+
+      </tr>
+      <tr>
+        <td>City: </td>
+        <td>{{cityDetails.city}}</td>
+      </tr>
+      <tr>
+        <td>Humidity: </td>
+        <td>{{cityDetails.humidity}}</td>
+      </tr>
+      <tr>
+        <td>Pressure: </td>
+        <td>{{cityDetails.pressure}}</td>
+      </tr>
+      <tr>
+          <td>Sunset: </td>
+          <td>{{cityDetails.sunset}}</td>
+        </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="getForeCost()">Forecost</button>
+  <button class="btn btn-danger" (click)="getCityDetials()">Get City Details</button>
+
+</div>

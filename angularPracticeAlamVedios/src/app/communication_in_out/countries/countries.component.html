@@ -1,0 +1,20 @@
+<div>
+<table align="center" border="1" cellpadding="5" cellspacing="0" borderColor="#ccc">
+  <thead style="background-color: yellow">
+    <th>Country</th>
+    <th>Capital</th>
+    <th>Currency</th>
+    <th>Flag</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countriesList">
+      <td>{{country.name}}</td>
+      <td>{{country.capital}}</td>
+      <td>{{country.currencies[0].symbol}}</td>
+      <td><img src='{{country.flag}}' height="50" width="75"></td>
+
+    </tr>
+  </tbody>
+</table>
+
+</div>

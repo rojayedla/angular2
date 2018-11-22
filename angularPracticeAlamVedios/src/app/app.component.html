@@ -1,0 +1,75 @@
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+				Module sharing Routers
+			</a>
+
+			<div class="dropdown-menu">
+				<a class="dropdown-item" [routerLink]="['eager']">Eager</a>
+				<a class="dropdown-item" [routerLink]="['Lazy']">Lazy</a>
+
+			</div>
+		</li>
+		<!-- <li class="nav-item"><a [routerLink]="['custom']">Module sharing</a></li> -->
+		<ul class="nav navbar-nav">
+			<li class="nav-item">
+				<a [routerLink]="['/']">Home</a>
+			</li>
+
+
+			<li class="nav-item">
+				<a [routerLink]="['pipeex']">Pipes</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['directives']">Directives</a>
+			</li>
+
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" [routerLink]="['forms']" id="navbardrop" data-toggle="dropdown">
+					Forms
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Model Dervin Forms</a>
+					<a class="dropdown-item" href="#">Template Drevin Forms</a>
+
+				</div>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['services']">Services</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['custom']">Communication</a>
+			</li>
+
+			<li class="nav-item">
+				<a [routerLink]="['details']">Details Form</a>
+			</li>
+
+			<li class="nav-item">
+				<a [routerLink]="['auto']">Autocomplete (sugest)</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['multiservices']">Multiple Service</a>
+			</li>
+			<li class="nav-item">
+				<a [routerLink]="['views']">viewChild and ViewChildren</a>
+      </li>
+      <li class="nav-item">
+      <a [routerLink]="['mapapi']">Angular Google Map</a>
+      </li>
+		</ul>
+
+		<button (click)="gotoJava()">Java</button>
+		<button (click)="gotoAndroid()">Android</button>
+
+
+	</div>
+</nav>
+
+<div id="router_outlet">
+	<router-outlet></router-outlet>
+</div>
+
